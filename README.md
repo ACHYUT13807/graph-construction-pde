@@ -1,5 +1,5 @@
 # Graph Construction for PDE-based Learning
-
+The Laplacian operator can be interpreted as local message passing over graph neighborhoods, making it naturally compatible with graph neural networks.
 This project explores graph-based representations of spatial grids for solving Partial Differential Equations (PDEs).
 
 ## Features
@@ -20,4 +20,3 @@ Python, NumPy, Matplotlib
 - Graph Neural Networks (PyTorch Geometric)
 - Fourier Neural Operators
 
-- #### The Laplacian operator can be interpreted as local message passing over graph neighborhoods, making it naturally compatible with graph neural networks.
