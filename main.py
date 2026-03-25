@@ -38,3 +38,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+from src.grid import create_grid
+from src.graph import compute_edges
+from src.visualize import plot_graph
+import numpy as np
+import matplotlib.pyplot as plt
+def main():
+    points = create_grid(20)
+    edges = compute_edges(points, k=4)
+    plot_graph(points, edges)
+    values = np.sin(points[:,0]*np.pi) * np.sin(points[:,1]*np.pi)
+    print(values)
+    # You can also visualize the values on the grid
+    plt.imshow(values.reshape(20, 20), extent=(0, 1, 0, 1), origin='lower')
+    plt.colorbar()
+    plt.title("Function Values on Grid")
+    plt.show()
+    plt.scatter(points[:,0], points[:,1], c=values, cmap='viridis')
+    plt.colorbar()
+    plt.title("Function Values on Scatter")
+    plt.show()
+if __name__ == "__main__":
+    main()
