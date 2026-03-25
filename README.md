@@ -19,3 +19,5 @@ Python, NumPy, Matplotlib
 - Navier-Stokes simulation
 - Graph Neural Networks (PyTorch Geometric)
 - Fourier Neural Operators
+
+- #### The Laplacian operator can be interpreted as local message passing over graph neighborhoods, making it naturally compatible with graph neural networks.
